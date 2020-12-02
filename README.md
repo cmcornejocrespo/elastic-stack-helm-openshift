@@ -28,10 +28,10 @@ $ helm upgrade --install filebeat elastic/filebeat --values filebeat/values.yaml
 ### Kibana
 ```sh
 # deploy kibana chart
-$ helm upgrade --install kibana elastic/kibana --values kibana/examples/openshift/values.yaml
+$ helm upgrade --install kibana elastic/kibana --values kibana/values.yaml
 ```
 ### Logstash (WIP)
 ```sh
-# deploy kibana chart
-$ helm upgrade --install logstash elastic/logstash -values logstash/examples/openshift/values.yaml
+# deploy logstash chart
+$ helm upgrade --install logstash elastic/logstash -values logstash/values.yaml
 ```

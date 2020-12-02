@@ -5,6 +5,11 @@ podSecurityContext:
   runAsUser: null
 
 securityContext:
-  # readOnlyRootFilesystem: true
-  #   runAsNonRoot: true
    runAsUser: null
+
+logstashConfig:
+  logstash.yml: |
+    xpack:
+      monitoring:
+        enabled: true
+        elasticsearch.hosts: http://elasticsearch-master:9200      

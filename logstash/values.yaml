@@ -1,0 +1,10 @@
+---
+
+podSecurityContext:
+  fsGroup: null
+  runAsUser: null
+
+securityContext:
+  # readOnlyRootFilesystem: true
+  #   runAsNonRoot: true
+   runAsUser: null

@@ -33,5 +33,5 @@ $ helm upgrade --install kibana elastic/kibana --values kibana/values.yaml
 ### Logstash (WIP)
 ```sh
 # deploy logstash chart
-$ helm upgrade --install logstash elastic/logstash -values logstash/values.yaml
+$ helm upgrade --install logstash elastic/logstash --values logstash/values.yaml
 ```

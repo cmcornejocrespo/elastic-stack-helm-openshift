@@ -9,3 +9,8 @@ podSecurityContext:
 
 sysctlInitContainer:
   enabled: false
+
+esConfig:
+ elasticsearch.yml: |
+   xpack.monitoring.collection.enabled: true
+

@@ -23,9 +23,5 @@ filebeatConfig:
       elasticsearch:
         hosts: ["${ELASTICSEARCH_HOSTS:elasticsearch-master:9200}"]
 
-    # output.elasticsearch:
-    #   host: '${NODE_NAME}'
-    #   hosts: '${ELASTICSEARCH_HOSTS:elasticsearch-master:9200}'
-
     output.logstash:
       hosts: 'logstash-logstash:5044'

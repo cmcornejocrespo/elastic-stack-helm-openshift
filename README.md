@@ -17,6 +17,12 @@ $ helm repo add elastic https://helm.elastic.co
 # deploy elasticsearch chart
 $ helm upgrade --install elasticsearch elastic/elasticsearch --values elasticsearch/values.yaml
 ```
+### Logstash
+```sh
+# deploy logstash chart
+$ helm upgrade --install logstash elastic/logstash --values logstash/values.yaml
+```
+
 ### Filebeat
 ```sh
 # add security context privileged to filebeat service
@@ -30,8 +36,4 @@ $ helm upgrade --install filebeat elastic/filebeat --values filebeat/values.yaml
 # deploy kibana chart
 $ helm upgrade --install kibana elastic/kibana --values kibana/values.yaml
 ```
-### Logstash (WIP)
-```sh
-# deploy logstash chart
-$ helm upgrade --install logstash elastic/logstash --values logstash/values.yaml
-```
+

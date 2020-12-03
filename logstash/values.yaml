@@ -19,6 +19,8 @@ service:
 logstashConfig:
   logstash.yml: |
 
+    http.host: "0.0.0.0"
+        
     monitoring:
       enabled: true
       elasticsearch.hosts: '${ELASTICSEARCH_HOSTS:elasticsearch-master:9200}'
